@@ -33,13 +33,13 @@ bower install
 npm install
 ```
 
-## WAtching files and running a dev server
+## Watching files and running a dev server
 
 ```shell
 gulp serve
 ```
 
-This will run a server for the project that can be accessed at [http://localhost:9000](http://localhost:9000). Changes to files will tell Gulp to automatically rebuild the site. Gulp will also run and compile SASS to CSS, compress images, and compile/minify JSwhen it detects changes to any of these types of files.
+This will run a server for the project that can be accessed at [http://localhost:9000](http://localhost:9000). Changes to files will tell Gulp to automatically rebuild the site. Gulp will also run and compile SASS to CSS , and compile JS when it detects changes to any of these types of files.
 
 ## Building the site
 
@@ -47,6 +47,6 @@ This will run a server for the project that can be accessed at [http://localhost
 gulp
 ```
 
-This command will compile all assets and then build the site to the /dist directory. This directory can then be pushed to your remote site.
+This command will compile all assets, compress images, and compile/minify JS and then build the site to the /dist directory. This directory can then be pushed to your remote site.
 
 I'm still working out changing the relative file paths. Update to come by 3/27.
