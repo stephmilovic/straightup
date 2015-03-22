@@ -1,0 +1,15 @@
+// This partial imports all of the partials in the sass folder
+// Gulp watches this file and compiles the Sass to CSS
+// Comment out any partials that you do not need 
+
+@import "bourbon";
+@import "neat";
+
+// Resets
+@import "normalize";
+
+// Base Styles
+@import "base/base";
+
+// Design styles
+@import "design/design";
