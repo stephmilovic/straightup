@@ -48,5 +48,3 @@ gulp
 ```
 
 This command will compile all assets, compress images, and compile/minify JS and then build the site to the /dist directory. This directory can then be pushed to your remote site.
-
-I'm still working out changing the relative file paths. Update to come by 3/27.
