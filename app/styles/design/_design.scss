@@ -2,3 +2,10 @@
 // Gulp watches this file and compiles the Sass to CSS
 
 // @import "example-partial";
+
+.imagehere {
+	background: url(../images/puppy.jpg) no-repeat 0 0;
+	display: block;
+	width: 640px;
+	height: 640px;
+}

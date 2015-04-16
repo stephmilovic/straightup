@@ -45,6 +45,7 @@ gulp.task('scripts', function() {
     .pipe(plumber())
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('.tmp/scripts'))
+    .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('html', ['styles'], function () {
@@ -134,7 +135,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'scripts', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*')
   .pipe(replace('../../fonts', '../fonts'))
   .pipe($.size({title: 'build', gzip: true}));
